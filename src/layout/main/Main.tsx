@@ -5,7 +5,7 @@ interface MainProps {
 }
  
 const Main: FunctionComponent<MainProps> = ({children}) => {
-    return <main className="bg-rose-700 min-h-[85vh]">{children}</main>;
+    return <main className="bg-rose-700 min-h-[90vh]">{children}</main>;
 }
  
 export default Main;
