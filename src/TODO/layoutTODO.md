@@ -4,15 +4,15 @@
 
 ---
 
-## **[]** Header - future container for the navigation
+## **[v]** Header - future container for the navigation
 
 ---
 
-    [] Branch: build basic header
+    [v] Branch: build basic header
 
-**[]** **Tasks:** \
-**[]** create Header.tsx file\
-**[]** return header text
+**[v]** **Tasks:** \
+**[v]** create Header.tsx file\
+**[v]** return header text
 
 ## **[]** Main - future container for the main site content
 
