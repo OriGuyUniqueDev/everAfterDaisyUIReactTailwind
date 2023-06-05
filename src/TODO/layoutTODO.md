@@ -14,7 +14,7 @@
 **[v]** create Header.tsx file\
 **[v]** return header text
 
-## **[]** Main - future container for the main site content
+## **[v]** Main - future container for the main site content
 
 ---
 
@@ -34,12 +34,12 @@
 **[v]** create Footer.tsx file\
 **[v]** return Footer text
 
-## **[]** Layout - container for the entire site header, main and footer
+## **[v]** Layout - container for the entire site header, main and footer
 
 ---
 
-    [] Branch: build site layout
+    [v] Branch: build site layout
 
-**[]** **Tasks:** \
-**[]** create Layout.tsx file\
-**[]** return layout stext
+**[v]** **Tasks:** \
+**[v]** create Layout.tsx file\
+**[v]** return layout stext
