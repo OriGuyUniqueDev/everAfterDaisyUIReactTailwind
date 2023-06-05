@@ -18,11 +18,11 @@
 
 ---
 
-    [] Branch: build basic main
+    [v] Branch: build basic main
 
-**[]** **Tasks:** \
-**[]** create Main.tsx file\
-**[]** return Main text
+**[v]** **Tasks:** \
+**[v]** create Main.tsx file\
+**[v]** return Main text
 
 ## **[]** Footer - future container for the footer/credit section
 
