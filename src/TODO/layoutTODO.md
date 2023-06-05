@@ -4,42 +4,42 @@
 
 ---
 
-## **[]** Header - future container for the navigation
+## **[v]** Header - future container for the navigation
 
 ---
 
-    [] Branch: build basic header
+    [v] Branch: build basic header
 
-**[]** **Tasks:** \
-**[]** create Header.tsx file\
-**[]** return header text
+**[v]** **Tasks:** \
+**[v]** create Header.tsx file\
+**[v]** return header text
 
-## **[]** Main - future container for the main site content
-
----
-
-    [] Branch: build basic main
-
-**[]** **Tasks:** \
-**[]** create Main.tsx file\
-**[]** return Main text
-
-## **[]** Footer - future container for the footer/credit section
+## **[v]** Main - future container for the main site content
 
 ---
 
-    [] Branch: build basic footer
+    [v] Branch: build basic main
 
-**[]** **Tasks:** \
-**[]** create Footer.tsx file\
-**[]** return Footer text
+**[v]** **Tasks:** \
+**[v]** create Main.tsx file\
+**[v]** return Main text
 
-## **[]** Layout - container for the entire site header, main and footer
+## **[v]** Footer - future container for the footer/credit section
 
 ---
 
-    [] Branch: build site layout
+    [v] Branch: build basic footer
 
-**[]** **Tasks:** \
-**[]** create Layout.tsx file\
-**[]** return layout stext
+**[v]** **Tasks:** \
+**[v]** create Footer.tsx file\
+**[v]** return Footer text
+
+## **[v]** Layout - container for the entire site header, main and footer
+
+---
+
+    [v] Branch: build site layout
+
+**[v]** **Tasks:** \
+**[v]** create Layout.tsx file\
+**[v]** return layout stext
