@@ -1,16 +1,16 @@
-import { FunctionComponent } from "react";
+import React, { FunctionComponent } from "react";
 import Header from "./header/Header";
 import Main from "./main/Main";
 import Footer from "./footer/Footer";
 
 interface LayoutProps {
-    
+    children:React.ReactNode
 }
  
-const Layout: FunctionComponent<LayoutProps> = () => {
+const Layout: FunctionComponent<LayoutProps> = ({children}) => {
     return ( <>
     <Header />
-    <Main />
+    <Main>{children}</Main>
     <Footer />
     </> );
 }

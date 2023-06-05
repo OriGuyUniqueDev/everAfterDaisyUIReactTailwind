@@ -5,7 +5,7 @@ interface HeaderProps {
 }
  
 const Header: FunctionComponent<HeaderProps> = () => {
-    return <h1>Header Text</h1>;
+    return <h1 className="bg-primary h-[5vh]" >Header Text</h1>;
 }
  
 export default Header;

@@ -1,3 +1,5 @@
+import Layout from "./layout/Layout";
+
 export default function App() {
-	return <h1 className="text-3xl font-bold   underline">Hello world!</h1>;
+	return <Layout><h1 className="font-serif" >Ori Guy Final Project</h1></Layout>;
 }

@@ -24,7 +24,7 @@
 **[v]** create Main.tsx file\
 **[v]** return Main text
 
-## **[]** Footer - future container for the footer/credit section
+## **[v]** Footer - future container for the footer/credit section
 
 ---
 

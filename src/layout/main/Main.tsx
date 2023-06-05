@@ -1,10 +1,11 @@
-import { FunctionComponent } from "react";
+import React, { FunctionComponent } from "react";
 
-interface MainProps {    
+interface MainProps {  
+    children: React.ReactNode
 }
  
-const Main: FunctionComponent<MainProps> = () => {
-    return <p>Main section</p>;
+const Main: FunctionComponent<MainProps> = ({children}) => {
+    return <main className="bg-rose-700 min-h-[85vh]">{children}</main>;
 }
  
 export default Main;
