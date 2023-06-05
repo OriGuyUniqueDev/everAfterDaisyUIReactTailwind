@@ -28,11 +28,11 @@
 
 ---
 
-    [] Branch: build basic footer
+    [v] Branch: build basic footer
 
-**[]** **Tasks:** \
-**[]** create Footer.tsx file\
-**[]** return Footer text
+**[v]** **Tasks:** \
+**[v]** create Footer.tsx file\
+**[v]** return Footer text
 
 ## **[]** Layout - container for the entire site header, main and footer
 
