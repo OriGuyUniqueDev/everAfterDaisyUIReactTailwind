@@ -1,11 +1,10 @@
+import LpNavbar from "../../pages/landing Page/components/navbar/LpNavbar";
 import { FunctionComponent } from "react";
 
-interface HeaderProps {
-    
-}
- 
+interface HeaderProps {}
+
 const Header: FunctionComponent<HeaderProps> = () => {
-    return <h1 className="bg-primary h-[5vh]" >Header Text</h1>;
-}
- 
+  return <LpNavbar />;
+};
+
 export default Header;
