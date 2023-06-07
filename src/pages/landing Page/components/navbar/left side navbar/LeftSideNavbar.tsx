@@ -9,7 +9,7 @@ interface LeftSideNavbarProps {
 
 const LeftSideNavbar: FunctionComponent<LeftSideNavbarProps> = ({ links }) => {
   return (
-    <div className="">
+    <div className="flex items-center gap-5">
       {links.map((link) => {
         return (
           <NavLink

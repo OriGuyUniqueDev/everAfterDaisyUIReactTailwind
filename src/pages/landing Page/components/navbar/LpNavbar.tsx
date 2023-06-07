@@ -2,6 +2,7 @@ import { FunctionComponent } from "react";
 import LeftSideNavbar from "./left side navbar/LeftSideNavbar";
 import NavigationDataType from "@/interfaces/navigationDataType";
 import LandingPageRoutesName from "@/router/endPointsNames";
+import RightSideNavbar from "./right side navbar/RightSideNavbar";
 
 interface LpNavbarProps {}
 
@@ -25,8 +26,9 @@ const leftSideNavLinksData: NavigationDataType[] = [
 
 const LpNavbar: FunctionComponent<LpNavbarProps> = () => {
   return (
-    <nav className="min-h-[5vh]">
+    <nav className="flex flex-row items-center justify-between ">
       <LeftSideNavbar links={leftSideNavLinksData} />
+      <RightSideNavbar />
     </nav>
   );
 };
