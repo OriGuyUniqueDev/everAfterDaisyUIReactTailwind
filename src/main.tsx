@@ -1,14 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { RouterProvider } from "react-router-dom";
-import landingPageRouterEndPoints from "./router/routerEndPoints";
+import { BrowserRouter } from "react-router-dom";
 import Layout from "./layout/Layout";
+import Router from "./router/Router";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <Layout>
-      <RouterProvider router={landingPageRouterEndPoints}></RouterProvider>
-    </Layout>
+    <BrowserRouter>
+      <Layout>
+        <Router />
+      </Layout>
+    </BrowserRouter>
   </React.StrictMode>
 );

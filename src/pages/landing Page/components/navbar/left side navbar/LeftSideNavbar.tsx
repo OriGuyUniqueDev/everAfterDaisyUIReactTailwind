@@ -1,7 +1,7 @@
 import NavigationDataType from "@/interfaces/navigationDataType";
 import LandingPageRoutesName from "@/router/endPointsNames";
 import { FunctionComponent } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 interface LeftSideNavbarProps {
   links: NavigationDataType[];
@@ -9,7 +9,7 @@ interface LeftSideNavbarProps {
 
 const LeftSideNavbar: FunctionComponent<LeftSideNavbarProps> = ({ links }) => {
   return (
-    <>
+    <div className="">
       {links.map((link) => {
         return (
           <NavLink
@@ -21,7 +21,7 @@ const LeftSideNavbar: FunctionComponent<LeftSideNavbarProps> = ({ links }) => {
           </NavLink>
         );
       })}
-    </>
+    </div>
   );
 };
 

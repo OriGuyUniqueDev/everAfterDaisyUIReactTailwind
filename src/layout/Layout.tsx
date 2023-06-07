@@ -4,15 +4,17 @@ import Main from "./main/Main";
 import Footer from "./footer/Footer";
 
 interface LayoutProps {
-    children:React.ReactNode
+  children: React.ReactNode;
 }
- 
-const Layout: FunctionComponent<LayoutProps> = ({children}) => {
-    return ( <>
-    <Header />
-    <Main>{children}</Main>
-    <Footer />
-    </> );
-}
- 
+
+const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
+  return (
+    <>
+      <Header />
+      <Main>{children}</Main>
+      <Footer />
+    </>
+  );
+};
+
 export default Layout;

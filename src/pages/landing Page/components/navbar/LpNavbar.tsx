@@ -9,11 +9,11 @@ const leftSideNavLinksData: NavigationDataType[] = [
   {
     name: "EverAfter",
     route: LandingPageRoutesName.ROOT,
-    style: "font-serif",
+    style: "font-serif text-3xl mr-7",
   },
   {
     name: "Features",
-    route: "#features",
+    route: "/#features",
     style: "font-sans",
   },
   {
