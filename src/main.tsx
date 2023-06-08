@@ -6,11 +6,11 @@ import Layout from "./layout/Layout";
 import Router from "./router/Router";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Layout>
-        <Router />
-      </Layout>
-    </BrowserRouter>
-  </React.StrictMode>
+	<React.StrictMode>
+		<BrowserRouter>
+			<Layout>
+				<Router />
+			</Layout>
+		</BrowserRouter>
+	</React.StrictMode>
 );
