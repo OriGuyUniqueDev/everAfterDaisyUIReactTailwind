@@ -4,22 +4,22 @@
 
 ---
 
-## **[]** Navbar
+## **[v]** Navbar
 
 ---
 
 on Desktop and Tablet - all visible\
 on mobile - only logo visible
 
-    [] Branch: build landing page navbar
+    [v] Branch: build landing page navbar
 
-**[]** **Links:**
+**[v]** **Links:**
 
-1. **[]** Logo
-2. **[]** Features
-3. **[]** About
-4. **[]** Login - button
-5. **[]** SignUp - button
+1. **[v]** Logo
+2. **[v]** Features
+3. **[v]** About
+4. **[v]** Login - button
+5. **[v]** SignUp - button
 
 ## **[]** Hero Section
 
