@@ -1,20 +1,12 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
 import { FunctionComponent } from "react";
-import LeftSideNavbar from "./left side navbar/LeftSideNavbar";
 import NavigationDataType from "@/interfaces/navigationDataType";
 import LandingPageRoutesName from "@/router/endPointsNames";
-import RightSideNavbar from "./right side navbar/RightSideNavbar";
-import SmallNavBar from "./SmallNavBar";
 import { Link, NavLink } from "react-router-dom";
 
 interface LpNavbarProps {}
 
 const leftSideNavLinksData: NavigationDataType[] = [
-	// {
-	// 	name: "EverAfter",
-	// 	route: LandingPageRoutesName.ROOT,
-	// 	style: "font-serif text-3xl mr-7",
-	// },
 	{
 		name: "Features",
 		route: "/features",
@@ -30,10 +22,6 @@ const leftSideNavLinksData: NavigationDataType[] = [
 const LpNavbar: FunctionComponent<LpNavbarProps> = () => {
 	return (
 		<>
-			{/* <nav className=" flex flex-row items-center justify-between ">
-				<LeftSideNavbar links={leftSideNavLinksData} />
-				<RightSideNavbar />
-			</nav> */}
 			<div className="drawer mb-5">
 				<input
 					id="navDrawer"
@@ -41,7 +29,6 @@ const LpNavbar: FunctionComponent<LpNavbarProps> = () => {
 					className="drawer-toggle"
 				/>
 				<div className="drawer-content flex flex-col">
-					{/* Navbar */}
 					<div className="w-full navbar bg-base-100 rounded-2xl">
 						<Link
 							to={"/"}
@@ -55,13 +42,13 @@ const LpNavbar: FunctionComponent<LpNavbarProps> = () => {
 								{leftSideNavLinksData.map((link) => {
 									return (
 										<li>
-											<Link
+											<NavLink
 												className={`${link.style} text-lg`}
 												to={link.route}
 												key={`link${link.name}`}
 											>
 												{link.name}
-											</Link>
+											</NavLink>
 										</li>
 									);
 								})}
@@ -100,8 +87,6 @@ const LpNavbar: FunctionComponent<LpNavbarProps> = () => {
 						className="drawer-overlay"
 					></label>
 					<ul className="menu py-4 w-60 h-full flex flex-col justify-between gap-5 bg-base-100">
-						{/* Sidebar content here */}
-
 						<div className=" font-serif text-2xl">EverAfter</div>
 
 						<div className="flex flex-col gap-5">
@@ -115,10 +100,6 @@ const LpNavbar: FunctionComponent<LpNavbarProps> = () => {
 					</ul>
 				</div>
 			</div>
-			{/* <nav className="md:hidden sm:block flex flex-row items-center justify-between ">
-				<LeftSideNavbar links={leftSideNavLinksData} />
-				<SmallNavBar />
-			</nav> */}
 		</>
 	);
 };
