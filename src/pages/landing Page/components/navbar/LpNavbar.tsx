@@ -5,7 +5,7 @@ import NavigationDataType from "@/interfaces/navigationDataType";
 import LandingPageRoutesName from "@/router/endPointsNames";
 import RightSideNavbar from "./right side navbar/RightSideNavbar";
 import SmallNavBar from "./SmallNavBar";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 interface LpNavbarProps {}
 
@@ -17,7 +17,7 @@ const leftSideNavLinksData: NavigationDataType[] = [
 	// },
 	{
 		name: "Features",
-		route: "/#features",
+		route: "/features",
 		style: "font-sans",
 	},
 	{
@@ -34,7 +34,7 @@ const LpNavbar: FunctionComponent<LpNavbarProps> = () => {
 				<LeftSideNavbar links={leftSideNavLinksData} />
 				<RightSideNavbar />
 			</nav> */}
-			<div className="drawer">
+			<div className="drawer mb-5">
 				<input
 					id="navDrawer"
 					type="checkbox"
@@ -42,8 +42,37 @@ const LpNavbar: FunctionComponent<LpNavbarProps> = () => {
 				/>
 				<div className="drawer-content flex flex-col">
 					{/* Navbar */}
-					<div className="w-full navbar bg-base-100">
-						<div className="flex-none lg:hidden">
+					<div className="w-full navbar bg-base-100 rounded-2xl">
+						<Link
+							to={"/"}
+							className="flex-1 px-2 mx-2 font-serif text-2xl"
+						>
+							EverAfter
+						</Link>
+						<div className="flex-none hidden md:block">
+							<ul className="menu menu-horizontal flex flex-row gap-5">
+								{/* Navbar menu content here */}
+								{leftSideNavLinksData.map((link) => {
+									return (
+										<li>
+											<Link
+												className={`${link.style} text-lg`}
+												to={link.route}
+												key={`link${link.name}`}
+											>
+												{link.name}
+											</Link>
+										</li>
+									);
+								})}
+								<div className="flex flex-row gap-2 justify-center items-center">
+									<button className=" font-serif text-center rounded-md h-9 w-36 text-base-100 bg-secondary ">Login</button>
+
+									<button className=" font-sans text-center rounded-md h-9 w-36 outline outline-primary outline-2">Register</button>
+								</div>
+							</ul>
+						</div>
+						<div className="flex-none md:hidden">
 							<label
 								htmlFor="navDrawer"
 								className="btn btn-square btn-ghost"
@@ -62,25 +91,6 @@ const LpNavbar: FunctionComponent<LpNavbarProps> = () => {
 									></path>
 								</svg>
 							</label>
-						</div>
-						<div className="flex-1 px-2 mx-2 font-serif text-2xl">EverAfter</div>
-						<div className="flex-none hidden lg:block">
-							<ul className="menu menu-horizontal">
-								{/* Navbar menu content here */}
-								{leftSideNavLinksData.map((link) => {
-									return (
-										<li>
-											<NavLink
-												className={`${link.style} `}
-												to={link.route}
-												key={`link${link.name}`}
-											>
-												{link.name}
-											</NavLink>
-										</li>
-									);
-								})}
-							</ul>
 						</div>
 					</div>
 				</div>
@@ -105,7 +115,7 @@ const LpNavbar: FunctionComponent<LpNavbarProps> = () => {
 					</ul>
 				</div>
 			</div>
-			{/* <nav className="lg:hidden sm:block flex flex-row items-center justify-between ">
+			{/* <nav className="md:hidden sm:block flex flex-row items-center justify-between ">
 				<LeftSideNavbar links={leftSideNavLinksData} />
 				<SmallNavBar />
 			</nav> */}
