@@ -9,11 +9,11 @@ interface LayoutProps {
 
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
 	return (
-		<>
+		<div className="container mx-auto">
 			<Header />
 			<Main>{children}</Main>
 			<Footer />
-		</>
+		</div>
 	);
 };
 

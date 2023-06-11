@@ -6,7 +6,7 @@ interface HeroSectionProps {}
 
 const HeroSection: FunctionComponent<HeroSectionProps> = () => {
 	return (
-		<div>
+		<div className="   grid grid-cols-12 gap-5	">
 			<HeroLeft />
 		</div>
 	);

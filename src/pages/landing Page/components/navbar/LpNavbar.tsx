@@ -22,7 +22,7 @@ const leftSideNavLinksData: NavigationDataType[] = [
 const LpNavbar: FunctionComponent<LpNavbarProps> = () => {
 	return (
 		<>
-			<div className="drawer mb-5">
+			<div className="drawer">
 				<input
 					id="navDrawer"
 					type="checkbox"
