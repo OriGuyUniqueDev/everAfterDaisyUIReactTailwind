@@ -1,13 +1,11 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import { FunctionComponent } from "react";
+import HeroSection from "./components/heroSection/HeroSection";
 
 interface LandingPageProps {}
 
 const LandingPage: FunctionComponent<LandingPageProps> = () => {
-  return (
-    <p>
-      Welcome to <span className="font-serif">Ever After</span>
-    </p>
-  );
+	return <HeroSection />;
 };
 
 export default LandingPage;
