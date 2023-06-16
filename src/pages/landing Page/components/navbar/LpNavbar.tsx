@@ -22,22 +22,22 @@ const leftSideNavLinksData: NavigationDataType[] = [
 const LpNavbar: FunctionComponent<LpNavbarProps> = () => {
 	return (
 		<>
-			<div className="drawer">
+			<div className=" drawer">
 				<input
 					id="navDrawer"
 					type="checkbox"
 					className="drawer-toggle"
 				/>
-				<div className="drawer-content flex flex-col">
+				<div className="flex flex-col drawer-content">
 					<div className="w-full navbar bg-base-100 rounded-2xl">
 						<Link
 							to={"/"}
-							className="flex-1 px-2 mx-2 font-serif text-2xl"
+							className="flex-1 px-2 mx-2 font-serif text-2xl "
 						>
 							EverAfter
 						</Link>
 						<div className="flex-none hidden md:block">
-							<ul className="menu menu-horizontal flex flex-row gap-5">
+							<ul className="flex flex-row gap-5 menu menu-horizontal">
 								{/* Navbar menu content here */}
 								{leftSideNavLinksData.map((link) => {
 									return (
@@ -52,10 +52,10 @@ const LpNavbar: FunctionComponent<LpNavbarProps> = () => {
 										</li>
 									);
 								})}
-								<div className="flex flex-row gap-2 justify-center items-center">
-									<button className=" font-serif text-center rounded-md h-9 w-36 text-base-100 bg-secondary ">Login</button>
+								<div className="flex flex-row items-center justify-center gap-2">
+									<button className="font-serif text-center rounded-md h-9 w-36 text-base-100 bg-secondary">Login</button>
 
-									<button className=" font-sans text-center rounded-md h-9 w-36 outline outline-primary outline-2">Register</button>
+									<button className="font-sans text-center rounded-md h-9 w-36 outline outline-primary outline-2">Register</button>
 								</div>
 							</ul>
 						</div>
@@ -86,15 +86,15 @@ const LpNavbar: FunctionComponent<LpNavbarProps> = () => {
 						htmlFor="navDrawer"
 						className="drawer-overlay"
 					></label>
-					<ul className="menu py-4 w-60 h-full flex flex-col justify-between gap-5 bg-base-100">
-						<div className=" font-serif text-2xl">EverAfter</div>
+					<ul className="flex flex-col justify-between h-full gap-5 py-4 menu w-60 bg-base-100">
+						<div className="font-serif text-2xl ">EverAfter</div>
 
 						<div className="flex flex-col gap-5">
 							<li>
-								<button className=" font-serif rounded-md h-9 w-36 text-base-100 bg-secondary ">Login</button>
+								<button className="font-serif rounded-md h-9 w-36 text-base-100 bg-secondary">Login</button>
 							</li>
 							<li>
-								<button className=" font-sans rounded-md h-9 w-36 outline outline-primary outline-2">Register</button>
+								<button className="font-sans rounded-md h-9 w-36 outline outline-primary outline-2">Register</button>
 							</li>
 						</div>
 					</ul>

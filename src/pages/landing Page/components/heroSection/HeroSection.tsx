@@ -5,11 +5,7 @@ import HeroLeft from "./heroLeft/HeroLeft";
 interface HeroSectionProps {}
 
 const HeroSection: FunctionComponent<HeroSectionProps> = () => {
-	return (
-		<div className="   grid grid-cols-12 gap-5	">
-			<HeroLeft />
-		</div>
-	);
+	return <HeroLeft />;
 };
 
 export default HeroSection;

@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
 	return (
-		<div className="container mx-auto">
+		<div className="container mx-auto text-white">
 			<Header />
 			<Main>{children}</Main>
 			<Footer />
