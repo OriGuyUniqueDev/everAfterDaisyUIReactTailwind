@@ -31,7 +31,7 @@ export default function LpNavbar() {
 								<li className=" nav-item">
 									<Link
 										className="flex py-2 font-semibold text-white hover:opacity-75"
-										to="#feature"
+										to="/#feature"
 									>
 										<span className="ml-2 text-lg">Features</span>
 									</Link>
@@ -39,7 +39,7 @@ export default function LpNavbar() {
 								<li className="nav-item">
 									<Link
 										className="flex py-2 font-semibold text-white hover:opacity-75"
-										to="#feature"
+										to="/about"
 									>
 										<span className="ml-2 text-lg">About</span>
 									</Link>
