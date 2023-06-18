@@ -1,3 +1,4 @@
+import LoginPage from "@/pages/loginPage/LoginPage";
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -47,7 +48,15 @@ export default function LpNavbar() {
 							</div>
 							<div className="flex flex-col gap-5 mt-2 lg:flex-row lg:mt-0">
 								<li>
-									<button className="font-serif rounded-md h-9 w-36 text-base-100 bg-secondary">Login</button>
+									<button
+										className="font-serif rounded-md h-9 w-36 text-base-100 bg-secondary"
+										onClick={() => {
+											console.log("hello");
+											window.loginModal.showModal();
+										}}
+									>
+										Login
+									</button>
 								</li>
 								<li>
 									<button className="font-sans rounded-md h-9 w-36 outline outline-primary outline-2">Register</button>

@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
 import { FunctionComponent } from "react";
+import LoginPage from "../loginPage/LoginPage";
 import CtaSection from "./components/CtaSection/CtaSection";
 import FeaturesSection from "./components/featuresSection/FeaturesSection";
 import HeroSection from "./components/heroSection/HeroSection";
@@ -13,6 +14,7 @@ const LandingPage: FunctionComponent<LandingPageProps> = () => {
 			<HeroSection />
 			<FeaturesSection />
 			<CtaSection />
+			<LoginPage />
 		</SectionContainer>
 	);
 };
